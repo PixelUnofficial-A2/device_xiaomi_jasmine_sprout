@@ -43,3 +43,4 @@ VENDOR_SECURITY_PATCH := 2020-09-05
 
 # Inherit the proprietary files
 include vendor/xiaomi/jasmine_sprout/BoardConfigVendor.mk
+
