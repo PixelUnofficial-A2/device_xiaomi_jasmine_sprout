@@ -80,3 +80,9 @@ PRODUCT_PACKAGES_DEBUG += \
 PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/bootdevice/by-name/system
 PRODUCT_VENDOR_VERITY_PARTITION := /dev/block/bootdevice/by-name/vendor
 $(call inherit-product, build/target/product/verity.mk)
+
+#Lens Switch
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.camera.aux.packageblacklist=com.discord \
+    vendor.camera.aux.packagelist=com.google.android.GoogleCamera,org.codeaurora.snapcam,com.android.camera
+
