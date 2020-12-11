@@ -47,6 +47,10 @@ ro.maintainer.name=Immanuel_Raj
 # Density
 TARGET_SCREEN_DENSITY := 400
 
+# Set lowram options and enable traced by default
+PRODUCT_PROPERTY_OVERRIDES += \
+     ro.config.low_ram=true \
+
 # Device identifier
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
