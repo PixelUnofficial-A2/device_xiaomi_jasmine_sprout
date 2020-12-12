@@ -21,11 +21,11 @@
 # definition file).
 #
 
-# inherit MI A2 LegionOS device config
+# inherit MI A2 Pixel Experience device config
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/legion_jasmine_sprout.mk
+    $(LOCAL_DIR)/aosp_jasmine_sprout.mk
 
 COMMON_LUNCH_CHOICES := \
-    legion_jasmine_sprout-eng \
-    legion_jasmine_sprout-userdebug \
-		legion_jasmine_sprout-eng
+    aosp_jasmine_sprout-eng \
+    aosp_jasmine_sprout-userdebug \
+		aosp_jasmine_sprout-eng

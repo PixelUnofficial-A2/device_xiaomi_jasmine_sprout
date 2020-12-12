@@ -24,8 +24,8 @@
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/jasmine_sprout/device.mk)
 
-# Inherit Legion product configuration
-$(call inherit-product, vendor/legion/config/common_full_phone.mk)
+# Inherit Pixel Experience product configuration
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Define first api level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
@@ -33,16 +33,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 #Boot Animation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
+#Gapps
+TARGET_GAPPS_ARCH := arm64
+
 # Build Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="jasmine-user 9 PKQ1.180904.001 V10.0.9.0.PDIMIXM release-keys"
-
-#Play Bold Play Wild
-LEGION_BUILD_TYPE := OFFICIAL
-
-# LegionOS Device Maintainers
-PRODUCT_PROPERTY_OVERRIDES += \
-ro.maintainer.name=Immanuel_Raj
+    PRIVATE_BUILD_DESC="redfin-user 11 RD1A.201105.003.C1 6886399 release-keys"
 
 # Density
 TARGET_SCREEN_DENSITY := 400
@@ -54,6 +50,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Device identifier
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := legion_jasmine_sprout
+PRODUCT_NAME := aosp_jasmine_sprout
 PRODUCT_DEVICE := jasmine_sprout
 PRODUCT_MODEL := Mi A2
